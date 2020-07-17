@@ -12,9 +12,9 @@
 }
 .container .inner #screen {
   width: 97%;
-  height: 20%;
+  height: 18%;
   border: #221f1f 2px solid;
-  margin: 7px auto 10px auto;
+  margin: 13px auto 10px auto;
   background-color: #888;
   font: 85px Digital-7 Mono;
   text-align: right;
@@ -41,7 +41,13 @@
   background-color: rgba(209, 195, 195, 0.575);
 }
 .container .inner .keys #equals {
-  width: 45%;
+  width: 47%;
+}
+.container .inner .keys #onOff {
+  background-color: #f13232;
+}
+.container .inner .keys #onOff:hover {
+  background-color: rgba(241, 50, 50, 0.575);
 }
 
 /*# sourceMappingURL=style.css.map */
