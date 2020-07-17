@@ -56,7 +56,7 @@ function equals() {
 }
 
 function power() {
-    if(powerButton){
+    if(powerButton || display[0]){
         powerButton = false;
         display = []
     } else {
