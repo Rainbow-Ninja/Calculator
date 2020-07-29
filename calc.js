@@ -30,7 +30,7 @@ function clearScreen() {
 
 function equals() {
     display = display.join("")
-    blip = display.split(/(\D)/)
+    blip = display.split(/(\D[^.])/)
     a = blip[0];
     b = blip[2];
     a = parseInt(a);
@@ -64,6 +64,11 @@ function power() {
         display = [0]
     }
     document.getElementById("screen").innerHTML = display;
+}
+
+function back() {
+    display.pop();
+    document.getElementById("screen").innerHTML = display.join("");
 }
 
 exports = {
