@@ -30,7 +30,7 @@ function clearScreen() {
 
 function equals() {
     display = display.join("")
-    blip = display.split(/(\D[^.])/)
+    blip = display.split(/(\D)/)
     a = blip[0];
     b = blip[2];
     a = parseInt(a);
@@ -39,18 +39,22 @@ function equals() {
         case "+":
             display = add(a, b);
             document.getElementById("screen").innerHTML = display;
+            display = [];
             break;
         case "-":
             display = minus(a, b);
             document.getElementById("screen").innerHTML = display;
+            display = [];
             break;
         case "*":
             display = times(a, b);
             document.getElementById("screen").innerHTML = display;
+            display = [];
             break;
         case "/":
             display = divide(a, b);
             document.getElementById("screen").innerHTML = display;
+            display = [];
             break;
     }
 }
