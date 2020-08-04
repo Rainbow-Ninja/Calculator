@@ -28,17 +28,20 @@
 .container .inner .keys .sign {
   background-color: #f16d6d;
 }
-.container .inner .keys .sign :hover {
+.container .inner .keys .sign:hover {
   background-color: rgba(241, 109, 109, 0.575);
 }
 .container .inner .keys button {
   width: 22%;
-  height: 22%;
+  height: 16%;
   border: black 1px solid;
   margin: auto;
 }
-.container .inner .keys button :hover {
+.container .inner .keys button:hover {
   background-color: rgba(209, 195, 195, 0.575);
+}
+.container .inner .keys #equals {
+  width: 45%;
 }
 
 /*# sourceMappingURL=style.css.map */
