@@ -1,27 +1,66 @@
 // For this to be complete I want this work to have SASS (yet to be added) and testing
+var display = [];
+
 function add(a, b){
-    console.log("I'm in add")
     return a + b;
 }
 
 function minus(a, b){
-    console.log("I'm in subtract")
     return a - b;
 }
 
 function times(a, b){
-    console.log("I'm in multiply")
     return a * b;
 }
 
 function divide(a, b){
-    console.log("I'm in division")
     return a/b;
+}
+
+function press(e){
+    display.push(e);
+    document.getElementById("screen").innerHTML = display.join("");
+    document.getElementById("screen").style.font = "85px Digital-7 Mono";
+}
+
+function clearScreen() {
+    display = [];
+    document.getElementById("screen").innerHTML = display;
+}
+
+function equals() {
+    display = display.join("")
+    blip = display.split(/(\D)/)
+    a = blip[0];
+    b = blip[2];
+    a = parseInt(a);
+    b = parseInt(b);
+    switch(blip[1]){
+        case "+":
+            display = add(a, b);
+            document.getElementById("screen").innerHTML = display;
+            break;
+        case "-":
+            display = minus(a, b);
+            document.getElementById("screen").innerHTML = display;
+            break;
+        case "*":
+            display = times(a, b);
+            document.getElementById("screen").innerHTML = display;
+            break;
+        case "/":
+            display = divide(a, b);
+            document.getElementById("screen").innerHTML = display;
+            break;
+    }
 }
 
 module.exports = {
     add,
     minus,
     times,
-    divide
+    divide,
+    press,
+    equals,
+    clearScreen
 }

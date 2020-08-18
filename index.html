@@ -2,30 +2,29 @@
 <html>
 <head>
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <div class="container">
         <div class="inner">
             <div id="screen"></div>
             <div class="keys">
-                <button type="button" id="7" onclick="">7</button>
-                <button type="button" id="8" onclick="">8</button>
-                <button type="button" id="9" onclick="">9</button>
-                <button type="button" class="sign" id="add" onclick="add()">+</button>
-                <button type="button" id="4" onclick="">4</button>
-                <button type="button" id="5" onclick="">5</button>
-                <button type="button" id="6" onclick="">6</button>
-                <button type="button" class="sign" id="minus" onclick="minus()">-</button>
-                <button type="button" id="1" onclick="">1</button>
-                <button type="button" id="2" onclick="">2</button>
-                <button type="button" id="3" onclick="">3</button>
-                <button type="button" class="sign" id="times" onclick="times()">x</button>
-                <button type="button" id="0" onclick="">0</button>
-                <button type="button" id="clear" onclick="">C</button>
-                <button type="button" id="equals" onclick="">=</button>
-                <button type="button" class="sign" id="divide" onclick="divide()">/</button>
+                <button type="button" id="7" onclick="press(7)">7</button>
+                <button type="button" id="8" onclick="press(8)">8</button>
+                <button type="button" id="9" onclick="press(9)">9</button>
+                <button type="button" class="sign" id="add" onclick="press('+')">+</button>
+                <button type="button" id="4" onclick="press(4)">4</button>
+                <button type="button" id="5" onclick="press(5)">5</button>
+                <button type="button" id="6" onclick="press(6)">6</button>
+                <button type="button" class="sign" id="minus" onclick="press('-')">-</button>
+                <button type="button" id="1" onclick="press(1)">1</button>
+                <button type="button" id="2" onclick="press(2)">2</button>
+                <button type="button" id="3" onclick="press(3)">3</button>
+                <button type="button" class="sign" id="times" onclick="press('*')">x</button>
+                <button type="button" id="0" onclick="press(0)">0</button>
+                <button type="button" id="clear" onclick="clearScreen()">C</button>
+                <button type="button" id="equals" onclick="equals()">=</button>
+                <button type="button" class="sign" id="divide" onclick="press('/')">/</button>
             </div>
         </div>
     </div>
