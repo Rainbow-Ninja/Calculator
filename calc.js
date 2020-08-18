@@ -20,7 +20,6 @@ function divide(a, b){
 function press(e){
     display.push(e);
     document.getElementById("screen").innerHTML = display.join("");
-    document.getElementById("screen").style.font = "85px Digital-7 Mono";
 }
 
 function clearScreen() {
@@ -55,7 +54,7 @@ function equals() {
     }
 }
 
-module.exports = {
+exports = {
     add,
     minus,
     times,
