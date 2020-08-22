@@ -28,7 +28,6 @@ button{
     width: 22%;
     height: 22%;
     border: black 1px solid;
-    /* border-radius: 50%; */
     margin: auto; 
 }
 
@@ -37,4 +36,8 @@ button{
     flex-wrap: wrap;
     width: 100%;
     height: 66%;
+}
+
+button:hover{
+    background-color: rgb(109, 118, 241);
 }

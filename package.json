@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calc.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rainbow-Ninja/Calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rainbow-Ninja/Calculator/issues"
+  },
+  "homepage": "https://github.com/Rainbow-Ninja/Calculator#readme",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
