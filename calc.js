@@ -1,4 +1,5 @@
 var display = [];
+var powerButton = false;
 
 function add(a, b){
     return a + b;
@@ -17,12 +18,13 @@ function divide(a, b){
 }
 
 function press(e){
+    if(display[0] === 0){ display = [] } 
     display.push(e);
     document.getElementById("screen").innerHTML = display.join("");
 }
 
 function clearScreen() {
-    display = [];
+    display = [0];
     document.getElementById("screen").innerHTML = display;
 }
 
@@ -53,6 +55,17 @@ function equals() {
     }
 }
 
+function power() {
+    if(powerButton || display[0]){
+        powerButton = false;
+        display = []
+    } else {
+        powerButton = true;
+        display = [0]
+    }
+    document.getElementById("screen").innerHTML = display;
+}
+
 exports = {
     add,
     minus,
@@ -60,5 +73,6 @@ exports = {
     divide,
     press,
     equals,
-    clearScreen
+    clearScreen,
+    power
 }
